@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dashboard</title>
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<h1>Dashboard</h1>
+	<p>Bem-vindo, <?php echo $_SESSION['username']; ?></p>
+	<?php if ($_SESSION['role'] == 'master') : ?>
+		<p>Você é um usuário master!</p>
+	<?php endif; ?>
+	<script src="../js/script.js"></script>
+</body>
+</html>
